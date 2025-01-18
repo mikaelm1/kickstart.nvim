@@ -548,9 +548,6 @@ require('lazy').setup({
           --  For example, in C this would take you to the header.
           map('gD', vim.lsp.buf.declaration, '[G]oto [D]eclaration')
 
-          -- Bring up documentation window hovering over cursor
-          vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
-
           -- The following two autocommands are used to highlight references of the
           -- word under your cursor when your cursor rests there for a little while.
           --    See `:help CursorHold` for information about when this is executed
