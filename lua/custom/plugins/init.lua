@@ -13,8 +13,15 @@ vim.opt.foldtext = ''
 vim.opt.foldlevel = 99
 vim.opt.foldlevelstart = 99
 
+-- Shorter tabs
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+
 -- Bring up documentation window hovering over cursor
 vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
+
+-- <C-t> is already taken, think of another one
+-- vim.keymap.set('n', '<C-t>', ':term', { desc = 'open terminal' })
 
 return {
   -- Git support
